@@ -1,0 +1,96 @@
+.labelText{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 140%;
+margin-left:18px;    
+}
+.labelText a{
+    color:green;
+}
+
+
+
+.customCheck input[type="checkbox"] {
+    display: none;
+   }
+   
+
+.customCheck  label {
+    color: #000;
+   cursor: default;
+   font-weight: normal;
+   line-height: 30px;
+   padding: 10px 0;
+   vertical-align: middle;
+   margin-left:5px;
+  }
+   
+
+.customCheck  label:before {
+    content: " ";
+    color: #000;
+    display: inline-block;
+
+    font: 20px/30px FontAwesome;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    border: 1px solid #e3e3e3;
+    border-image: initial;
+    vertical-align: middle;
+   }
+   
+
+.customCheck  input:checked + label:before {
+
+    content: "\f00c";
+    color:green;
+   }
+
+
+
+.customCheck input:disabled + label:before {
+    background: #eee;
+    color: #aaa;
+   }
+
+
+.customButton{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    width: 192px;
+    height: 42px;
+    background: linear-gradient(98.3deg, #93E08C -1.93%, #78CEBF 97.03%);
+    border-radius: 3px;
+}
+    
+::-webkit-inner-spin-button {display:none}
+
+::-webkit-datetime-edit {display:none}
+::-webkit-calendar-picker-indicator {
+    position:absolute;
+    right:16px;
+    color: transparent;
+    opacity: 1;
+    height:22px;
+    width:24px;
+    background:url("http://localhost:3000/date.png") no-repeat;
+    background-size: contain;
+  }
+  .form-control:focus {
+    border-color: #479C3F;;
+    box-shadow: none;
+  }    
+   
+    
+   
+    
+   

@@ -1,0 +1,16 @@
+.gridTextHeader{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+margin-bottom:12px;
+}
+
+.gridText p{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+}

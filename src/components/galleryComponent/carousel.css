@@ -1,0 +1,56 @@
+.galleryDiv{
+    margin-top:40px;
+}
+
+.galleryHeader{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+}
+.carousel-indicators{
+    width:84px;
+    padding:0;
+    list-style-type: none;
+}
+.carousel-indicators li{
+    width:12px;
+    height:12px;
+    background-color: #C9C9C9;
+    border-radius:50%;    
+}
+.carousel-indicators .active{
+    width:12px;
+    height:12px;
+    
+    background-image: linear-gradient(91.83deg, #93E08C -1.93%, #78CEBF 97.03%);
+}
+
+
+.arrow-left{
+width:32px;
+height:32px;
+background:url("http://localhost:3000/arrow-left.png")
+}
+.arrow-right{
+width:32px;
+height:32px;
+background:url("http://localhost:3000/arrow-right.png")
+}
+.arrow-right:hover{
+background:url("http://localhost:3000/arrow-right_hover.png")    
+}
+.arrow-left:hover{
+background:url("http://localhost:3000/arrow-right_hover.png"); transform: rotate(-180deg);       
+}
+
+
+
+
+
+
+
+
+
+

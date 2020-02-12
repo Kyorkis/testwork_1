@@ -1,0 +1,107 @@
+.myheader{
+height: 70px;
+background: #FFFFFF;
+box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
+}
+.myapp{
+    padding:0 70px 0 70px;
+}
+.headerText{
+    padding-left:70px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+.galleryDiv{
+    margin-top:40px;
+}
+
+.galleryHeader{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 39px;
+}
+.carousel-indicators{
+    width:60px;
+    padding:0;
+    list-style-type: none;
+}
+.carousel-indicators li{
+    width:12px;
+    height:12px;
+    background-color: #C9C9C9;
+    border-radius:50%;    
+}
+.carousel-indicators .active{
+    width:12px;
+    height:12px;
+    
+    background-image: linear-gradient(91.83deg, #93E08C -1.93%, #78CEBF 97.03%);
+}
+
+
+.arrow{
+width:32px;
+height:32px;
+background: #C9C9C9;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+
+.arrow-1 {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+}
+.arrow-1 div {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 10px;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: block;
+}
+.arrow-1 div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    bottom: -11px;
+    left: -8px;
+    background-color: #337AB7;
+    transform: rotate(45deg);
+}
+.arrow-1 div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    left: -8px;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+html,body{
+    width:100%;
+}

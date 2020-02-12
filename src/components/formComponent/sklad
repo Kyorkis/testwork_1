@@ -1,0 +1,78 @@
+import React from 'react'
+import Form from 'react-bootstrap/Form'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Spinner from 'react-bootstrap/Spinner'
+
+class FormComponent extends React.Component{
+    
+    render(){
+        const {title}=this.props.data
+        const CustomForm=()=>{
+            console.log("В форму пришло",this.props.data)
+            
+            if(this.props.data.field_groups!==undefined){
+                const dataForMainGroup=this.props.data.fields.filter(item=>item.group==="main")
+                console.log("dataForMainGroup",dataForMainGroup)
+                const dataForAdditionGroup=this.props.data.fields.filter(item=>item.group==="additional")
+                console.log("dataForAdditionGroup",dataForAdditionGroup)
+
+                const mainFields = dataForMainGroup.map((item)=>{
+                    return(
+
+
+                        
+                        <Form.Group >
+                            <Form.Label>{item.label}</Form.Label>
+                            <Form.Control type={item.type} />
+                        </Form.Group>
+
+                    )
+                })
+
+                const additionField=dataForAdditionGroup.map((item)=>{
+                    return(
+                        <Form.Group style={{height:"100%"}}>
+                            <Form.Label>{item.label}</Form.Label>
+                            <Form.Control type={item.type} />
+                        </Form.Group> 
+                    )
+                })
+
+                return(
+                    <React.Fragment>
+                        <h2>{title}</h2>
+                        <Form>
+                            <Row>
+                                <div className={this.props.data.field_groups.main}>
+                                    {mainFields}
+                                </div>
+                                <div className={this.props.data.field_groups.additional}>
+                                    {additionField}    
+                                </div>
+                            </Row>
+                        </Form>
+                    </React.Fragment>
+                )
+            }
+            else{
+                return(
+                        <Spinner animation="border" role="status">
+                            <span className="sr-only">Loading...</span>
+                        </Spinner> 
+                )
+            }
+    
+        }
+
+        
+
+        return(
+            <div>
+                <CustomForm/>
+            </div>
+            
+        )
+    }
+}
+export default FormComponent
